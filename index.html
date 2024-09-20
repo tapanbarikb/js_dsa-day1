@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>D.S.A day_1</h2>
+    <!--== ARRAY TRAVERSING AND ACCESSING===-->
+
+      <!-- Q 11️⃣ -->
+    <!-- .Make Html Page write basic Array 
+    .Traversing with loop
+    .Accessing element
+    .Accces element width text input and button 
+    .validation -->
+        
+    <script>
+        //Traversing with loop
+
+   // let data=[9,45,2,8,45,25,7,78,0,11,41,77]
+    // for(i=0;i<data.length;i++){
+    //     document.write(` data=${i}= is =${data[i]} <br/>`)
+    // }
+
+    //Accessing element 2️⃣q
+
+    let data=[9,45,2,8,45,25,7,78,0,11,41,77]
+
+    //  let x=8
+    // document.write(data[x])
+
+        //button access
+        
+         function newFun() {
+            let el=document.getElementById("element").value
+            
+            //validation
+             if(el<data.length && typeof parseInt()==="Number"){
+                alert(data[el])
+             }else{
+                alert("data not")
+             }
+            
+        }
+
+    </script>
+   <input type="text" id="element">
+   <button onclick="newFun()">click</button>
+</body>
+</html>
